@@ -23,7 +23,7 @@ Linux/Mac
 ```bash
 docker logs gophish_demo | grep "User: admin"
 ```
-Windows
+Windows (Powershell)
 ```bash
 docker logs gophish_demo | Select-String -Pattern "User:admin"
 ```
