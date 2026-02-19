@@ -7,7 +7,7 @@ git clone https://github.com/CSC-IU/gophish-lab.git
 
 # 2. Change Directory
 ```bash
-cd gophish-lab-main
+cd .\gophish-lab\
 ```
 
 # 3. Compose Docker File
@@ -16,8 +16,21 @@ docker-compose up -d
 ```
 
 # 4. Find Password to Mailhog
-Container name will be in logs.
-
+Linux/Mac
 ```bash
-docker logs {container name} | grep "User: admin"
+docker logs gophish_demo | grep "User: admin"
+```
+Windows
+```bash
+docker logs gophish_demo | Select-String -Pattern "User:admin"
+```
+
+# 5. Open Mailhog in Browser
+```
+http://localhost:8025
+```
+
+# 6. Open GoPhish in Browser
+```
+https://localhost:3333
 ```
