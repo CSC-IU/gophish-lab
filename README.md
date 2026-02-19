@@ -24,7 +24,7 @@ Linux/Mac
 docker logs gophish_demo | grep "User: admin"
 ```
 Windows (Powershell)
-```bash
+```powershell
 docker logs gophish_demo | Select-String -Pattern "User:admin"
 ```
 <img src="https://i.ibb.co/vChg2XXX/image.png" alt="test" width="950"/>
