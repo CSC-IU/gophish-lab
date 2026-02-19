@@ -1,0 +1,18 @@
+version: '3'
+services:
+    gophish:
+        image: gophish/gophish
+        container_name: gophish_demo
+        ports:
+            - "3333:3333"
+            - "8080:80"
+            - "8443:443"
+        restart: unless-stopped
+        
+    mailhog:
+        image: mailhog/mailhog
+        container_name: mailhog
+        ports:
+            - "8025:8025"
+            - "1025:1025"
+        restart: unless-stopped
