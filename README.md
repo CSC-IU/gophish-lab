@@ -2,7 +2,7 @@
 
 # 1. Pull Repo
 ```bash
-git pull https://github.com/CSC-IU/gophish-lab.git
+git clone https://github.com/CSC-IU/gophish-lab.git
 ```
 
 # 2. Change Directory
